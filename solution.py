@@ -8,7 +8,8 @@ def solution(x_success: int,
              x_cnt: int, 
              y_success: int, 
              y_cnt: int) -> bool:
-
+    
+    import scipy.stats as st
     x = x_success / x_cnt
     y = y_success / y_cnt
     sd = np.sqrt((x * (1 - x) / x_cnt) + (y * (1 - y) / y_cnt))
